@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Formulario de ingreso</title>
+</head>
+
+<body>
+  <h1>Curso</h1>
+  <p>Curso</p>
+  <form action="" method="POST">
+      {% csrf_token %}
+    <label for="fname">Nombre curso:</label>
+    <input type="text" name="nombre"><br><br>
+    <label for="lname">Camada Curso:</label>
+    <input type="text" name="camada"><br><br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <h1>Estudiante</h1>
+  <p>Estudiante</p>
+  <form action="" method="POST">
+      {% csrf_token %}
+    <label for="fname">Nombre:</label>
+    <input type="text" name="name"><br><br>
+    <label for="lname">Apellido:</label>
+    <input type="text" name="lastname"><br><br>
+    <label for="lname">Edad:</label>
+    <input type="text" name="age"><br><br>   
+    <label for="fname">Email:</label>
+    <input type="text" name="email"><br><br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <h1>Profesor</h1>
+  <p>Profesor</p>
+  <form action="" method="POST">
+      {% csrf_token %}
+    <label for="fname">Nombre:</label>
+    <input type="text" name="name"><br><br>
+    <label for="lname">Apellido:</label>
+    <input type="text" name="lastname"><br><br>
+    <label for="lname">Edad:</label>
+    <input type="text" name="age"><br><br>      
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+</html>
